@@ -390,6 +390,7 @@ public class OkClient implements IClient {
       return this;
     }
 
+    @Override
     public Builder addConfigurer(ClientConfigurer configurer) {
       if (this.configurers == null) {
         this.configurers = new CompositeClientConfigurer();
